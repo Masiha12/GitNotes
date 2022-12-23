@@ -1,0 +1,225 @@
+
+************************Class04**********************************
+Git commands
+ 
+
+a.git ls-files -->to view files in the staging area
+b.git rm --cached filename to remove file from staging area only
+
+c.touch .ignore to omit files from our repo which we donot want to 
+tracked
+enter the name of the files and folder in .gitignore file that u want to avoid and save it.
+
+
+
+-------------------------------------git GITHUB-------------------------------------
+ 
+ 
+1. create a repository
+2. all repos have a unique link and we use git remote add origin "link" 
+to establish that particular link
+3. Specify to which branch on the git hub you want to push your code
+4. git push -u origin main the first time u pus the codes
+the second time just use git push
+
+
+
+-----------------------------------------GIT CLONE------------------------------------
+Git Clone:
+to clone/download the whole repository in your local
+command :git clone URL
+
+git fetch:
+git fetch is used to see that wether there are any changes in the remote 
+repository that needs to be updated in local repostiory
+only shows that there is some thing in remote repo that you donot have
+command:git fetch
+
+git pull
+Update the repository with the new commits
+
+NOTE:
+1.if you made a commit in local repo, and some one else updated the remote repo meanwhile
+then you have to pull the remote repo to synch the history of local and remote, only then you will be able to push the code to github
+2.if you made changes in code and now without comitting or adding them in staging area you want to update you repo, 
+you wont be able to do so unless you do git stash
+
+vim editor commands:
+press i to insert data to type
+and once you are done typing
+press ESC
+amd type :wq and press enter to save the file
+
+
+
+
+
+
+**********************************Class05********************************************
+Branches:
+We use branches to avoid messing the main branch in our code
+
+to create a branch ---? git branch BranchName
+to switch to a branch ---> git checkout branchName
+
+Merging techniques:
+
+Fast Forward Merge:
+1.will only happen if the parent branch doesnt have any new commits, since the time the child branch was created 
+
+
+
+Recersuive Merge:
+ will happen if parent branch had new commits after creation of the child branch.
+
+   in a recursive merge a conflict happens:
+   							when the same file has been modified by two differnet people 
+   							on the same lines
+
+
+
+
+
+
+*******************Project**************************
+
+Sprint1:
+
+Description:
+Write down the code to develope a Solar system and deploy it.
+
+
+Note:
+Your team lead will provide you with a basic skeleon of the project and then you will add modifications in it.
+
+
+Team Lead:
+1.create a project in intellij  ----> DOne
+2.add the basic skeleton of code ----> Done
+3.commit the code on local repo  ---> DOne
+									a.navigate to the right location (project working directory)
+									b.git init
+									c.git add .
+									d. git commit -m ""
+
+4.push it to github---->
+						a.Create a repository on gihtub
+						b.Establish the link
+						c.Git branch -M main
+						d. git push -u origin main
+
+
+-------------------------------Task 1 ---Team Member-------------
+1.clone the repository  -->DONE---> after cloning please make sure to move ur terminal inside the folder of the 							  project
+2.create a new branch---->
+							a.create a new branch -->git branch branch name
+							b. switch to the created branch --> git checkout branchname
+							c. use command : "git branch" to list all branches( the one with * is your    current branch)
+
+
+							Note: UNABLE TO SWITCH A BRANCH BECUASE OF ERROR "U HAVE UNSAVED CHANGES"
+							      "git stash"  or "git stash -u" command to UNDO any changes in the file 
+							      please make sure that u only use this command when u donot have any changes that u made urself .
+3.add codes
+4.add as many number of commits he wants DONE
+5.if everything is working fine (push the code to github in his own branch)
+									a. make sure that he is in the correct branch (i.e his own branch)
+									b. use the command  (git push -u origin smith)  (u cant use git push directly because
+									we are pushing the first time in smith branch)
+
+
+6. merge the code  to the main branch
+									a.make sure that you are in the parent branch 
+									b. git merge branchname  (where branch name is the name of branch u want to merge)
+
+
+
+
+
+---------------------------------- Task 2-----------------------------------------
+
+Description :
+
+Create a project Solar system 
+Push it to github 
+
+
+
+
+
+
+-----------------------------------Task3---------------------------------------
+
+Description :
+
+Tom :
+can u add features for the sun into the project 
+
+STEPS:
+1.clone the repo
+2.Create a Branch and write down the code
+3.Commit the code and make sure it is working fine
+4.Merge it to main
+
+
+
+
+
+
+--------------------------------------Revision---------------------------------------
+Scenario:
+you hvae to wrok on a project and add new features.
+
+
+TOM:
+1.git clone 
+2.New branch ---> git branch branchname
+3.switch to it--> git checkout branchname
+in cases of error that doesnt allow to switch --> git stash or git stash -u
+
+4.write down the code 
+5.we commit it
+
+6.update the code on github in our own branch ---> git push -u origin branchName
+
+
+7. merge:
+use either a or b
+ a.Local computer -->
+ 					1.checkout to the parent branch
+ 					2.git merge branchname(the branch u want to merge)
+ B.github -->
+ 				1. Open a new pull request
+ 				2.set base--> the parent branch
+ 					compare--> the branch u want to merge
+ 				3. create pull request
+
+ 				the task of tom is done
+ 				now team lead is going to veiw the pull request and he will resolve it on github
+ 				by click on pull request and then clicking on merege the request
+
+
+
+
+Merging techniques:
+
+Fast Forward Merge:
+1.will only happen if the parent branch doesnt have any new commits, since the time the child branch was created 
+
+
+
+Recersuive Merge:
+ will happen if parent branch had new commits after creation of the child branch.
+
+   in a recursive merge a conflict happens:
+   							when the same file has been modified by two differnet people 
+   							on the same lines
+
+
+
+
+
+
+
+
+

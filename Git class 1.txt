@@ -1,0 +1,43 @@
+What is a Version?
+Each update or change in our code creates a new version.
+There are different conventions of naming the version
+e.g V0, V0.1, V0.2
+V0, V1 ,V2
+V0, V0.1 ,V1,V1.1< V1.2
+
+
+Why do we need GIT?
+We need GIt to make our life easy
+It helps us to manage our versions on a our laptop locally!
+
+If we donot use git then
+it gets very hard to manage all the versions
+the space consumed is also big
+and its hard for us to find any code because they are not properly managed.
+
+
+
+●	We learned why do we need Git and Github and how it makes our life easy and helps us work together in collaboration
+○	Git is just one of the VCT, there are other popular SVN
+○	Why to use GIT? —> to collaborate with teams
+○	When you work in a team on the same file/project —> it is very helpful and useful
+
+
+
+
+
+We want to navigate our terminal/gitbash to that particular folder
+
+
+
+TO navigate:
+1.Check the home directory -->home directory is the first directory when we open our terminal.
+command-->PWD(prints the current directory).
+2.To see the path that leads to that folder
+command-->LS(lists all directories in the current directory)
+3.TO move the terminal in that directory
+command-->CD Directory-Name(change the directory)
+4.To move one step back use the
+command cd ..
+5. to move your terminal to the home directory use the command
+cd ~

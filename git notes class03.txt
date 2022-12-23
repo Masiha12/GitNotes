@@ -1,0 +1,33 @@
+**************git class 03*************
+
+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
+
+Task:
+Track your project using git.
+
+1.Decide wehere u will create the repostiory 
+2.navigate the terminal to the right location
+3.Initalize the emoty git repo   --- > git init  
+4.git status -->untracked files -- red color
+5.Add all the files in the staging area ( so that git starts tracking them)--> git add .
+6.add all the files in the repostiory  --> git commit -m "commit message"
+
+
+
+
+
+Sending our data to github........
+
+1.create a new remote repository on gihtub
+2.establish the connection by usign command---> git remote add origin URL
+3. to check that connection has been established -- > git remote -v
+4.once connection is there you must run the command --> git branch -M main
+
+
+------- only once after u create a new repo------------------
+5. to send your codes or data to github  --? git push -u origin main
+
+
+
+
+
